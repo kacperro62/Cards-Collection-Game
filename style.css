@@ -1,0 +1,22 @@
+
+:root {
+    --grey: #555;
+    --white: #fff;
+}
+
+nav {
+    background-color: var(--grey);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 0;
+    color: var(--white);
+    text-decoration: none;
+}
