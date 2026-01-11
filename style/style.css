@@ -1,8 +1,8 @@
 
 :root {
     --grey: #222;
-    --white: #888;
-    --secondary-white: #f1f1f1;
+    --light-grey: #888;
+    --white: #f1f1f1;
 }
 
 nav {
@@ -12,19 +12,20 @@ nav {
     left: 0;
     height: 100%;
     width: 150px;
-    transform: translateX(-150px);
+    padding: 20px;
+    transform: translateX(0);
     transition: all 1s ease;
 }
 
 nav.open {
-    transform: translateX(0);
-    padding: 20px;
+    transform: translateX(-150px);
+    padding: 0;
 }
 
 nav a {
     display: block;
     padding: 0.5rem 0;
-    color: var(--white);
+    color: var(--light-grey);
     text-decoration: none;
     transition: all 0.5s ease;
     font-size: 20px;
@@ -37,19 +38,18 @@ nav span {
 nav span p {
     font-weight: 1000;
     font-size: 28px;
-    color: #888;
+    color: var(--light-grey);
     margin: 0;
     transition: color .5s ease-in-out;
     cursor: pointer;
 }
 
 nav a:hover {
-    color: var(--secondary-white);
-    font-size: 23px;
+    color: var(--white);
 }
 
 nav span p:hover {
-    color: var(--secondary-white);
+    color: var(--white);
 }
 
 .menu-trigger span {
@@ -58,5 +58,31 @@ nav span p:hover {
     height: 5px;
     margin: 5px 0;
     border-radius: 2px;
-    background-color: var(--white);
+    background-color: var(--light-grey);
+}
+
+.chest {
+    background-color: var(--grey);
+    color: var(--light-grey);
+    border: 2px solid black;
+    width: 150px;
+    height: 25px;
+    padding: 5px;
+    transition: all 0.5s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.chest:hover {
+    color: var(--white);
+}
+
+.result {
+    background-color: var(--grey);
+    color: var(--light-grey);
+    border: 2px solid black;
+    width: 150px;
+    height: 25px;
+    padding: 5px;
+    user-select: none;
 }
