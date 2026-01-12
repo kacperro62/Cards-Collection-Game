@@ -13,13 +13,6 @@ nav {
     height: 100%;
     width: 150px;
     padding: 20px;
-    transform: translateX(0);
-    transition: all 1s ease;
-}
-
-nav.open {
-    transform: translateX(-150px);
-    padding: 0;
 }
 
 nav a {
@@ -48,17 +41,10 @@ nav a:hover {
     color: var(--white);
 }
 
-nav span p:hover {
-    color: var(--white);
-}
-
-.menu-trigger span {
-    display: block;
-    width: 30px;
-    height: 5px;
-    margin: 5px 0;
-    border-radius: 2px;
-    background-color: var(--light-grey);
+.main {
+    flex: 1;
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
 .chest {

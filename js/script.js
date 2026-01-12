@@ -1,18 +1,3 @@
-
-// Sidebar menu
-
-const menuTriggerEl = document.querySelector(".menu-trigger");
-const sideBarEl = document.querySelector("nav");
-const closeEl = document.querySelector("nav span");
-
-menuTriggerEl.addEventListener("click", () => {
-    sideBarEl.classList.remove("open");
-});
-
-closeEl.addEventListener("click", () => {
-    sideBarEl.classList.add("open");
-});
-
 // Chests rarity and opening system
 
 const chest = document.querySelector(".chest");
